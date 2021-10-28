@@ -149,4 +149,18 @@ export const info = [
     sheetDrum: chao,
     type: 'muiñeira',
   },
+  {
+    id: 22,
+    name: 'R. Carcacía',
+    sheet: mallou,
+    sheetDrum: chao,
+    type: 'rumba',
+  },
+  {
+    id: 23,
+    name: 'R. de Vergara',
+    sheet: mallou,
+    sheetDrum: chao,
+    type: 'rumba',
+  },
 ];
