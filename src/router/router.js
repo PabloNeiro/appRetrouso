@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import Home from '../components/home/Home';
-import OneInfo from '../components/retrouso/OneSheetRetrouso';
 import OneSheetRetrouso from '../components/retrouso/OneSheetRetrouso';
 import Retrouso from '../components/retrouso/Retrouso';
 import './router.css';
