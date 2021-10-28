@@ -6,7 +6,7 @@ function InverniaHome() {
     <Card>
       <CardMedia component='img' alt='green iguana' height='140' image='invernia.jpg' />
 
-      <Link to='/questions2' className='btn btn-success mt-4 mb-4'>
+      <Link to='/invernia' className='btn btn-success mt-4 mb-4'>
         INVERNIA
       </Link>
       {/* </CardActions> */}

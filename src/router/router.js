@@ -15,7 +15,10 @@ function Routes() {
         <Route exact path='/retrouso'>
           <Retrouso />
         </Route>
-        <Route exact path='/info/:id'>
+        <Route exact path='/invernia'>
+          <Retrouso />
+        </Route>
+        <Route exact path='/partituras/:id'>
           {/* <Route exact path='/info'> */}
           <OneSheetRetrouso />
         </Route>

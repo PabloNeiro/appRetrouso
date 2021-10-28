@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Col, Row, Table } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import { info } from '../../database/database';
+import SelectSheet from './SelectSheet';
+import TableSheet from './TableSheet';
 
 function SheetRetrouso() {
   const [list, setList] = useState();
@@ -29,44 +30,15 @@ function SheetRetrouso() {
       <Row className='mt-2'>
         <Col xs='6'></Col>
         <Col xs='6'>
-          <h4>
-            <select name='select' onChange={filterSong}>
-              <option value='todas'>Mostrar todas</option>
-              <option value='pasodoble'>Pasodobles</option>
-              <option value='muiñeira'>Muiñeiras</option>
-              <option value='xota'>Xotas</option>
-              <option value='rumba'>Rumbas</option>
-              <option value='foliada'>Foliadas</option>
-              <option value='vals'>Vals</option>
-            </select>
-          </h4>
+          <SelectSheet filterSong={filterSong} />
         </Col>
         <Col xs='2'></Col>
       </Row>
-
-      <Table striped>
-        <thead>
-          <tr className='text-center'>
-            <th>Nome</th>
-            <th>Partituras</th>
-          </tr>
-        </thead>
-        <tbody>
-          {list &&
-            list.map((value, i) => (
-              <tr key={i} className='text-center'>
-                <td>
-                  <b>{value.name}</b>
-                </td>
-                <td>
-                  <Link className='btn btn-success' to={`/info/${value.id}`}>
-                    VER
-                  </Link>
-                </td>
-              </tr>
-            ))}
-        </tbody>
-      </Table>
+      <Row>
+        <Col xs='12'>
+          <TableSheet list={list} />
+        </Col>
+      </Row>
     </>
   );
 }
