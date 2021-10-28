@@ -19,7 +19,6 @@ function Routes() {
           <Retrouso />
         </Route>
         <Route exact path='/partituras/:id'>
-          {/* <Route exact path='/info'> */}
           <OneSheetRetrouso />
         </Route>
       </Switch>
