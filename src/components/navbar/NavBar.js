@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <Navbar color='dark' dark expand='md'>
       <Container>
-        <NavbarBrand href='/'>INICIO</NavbarBrand>
+        <NavbarBrand>INICIO</NavbarBrand>
       </Container>
     </Navbar>
   );

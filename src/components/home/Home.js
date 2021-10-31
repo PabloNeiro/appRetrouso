@@ -9,10 +9,10 @@ function Home() {
     <>
       <NavBar />
       <Row className='text-center'>
-        <Col xs={12} className='mt-5'>
+        <Col xs={12} md={6} className='mt-5'>
           <RetrousoHome />
         </Col>
-        <Col xs={12} className='mt-5'>
+        <Col xs={12}  md={6} className='mt-5'>
           <InverniaHome />
         </Col>
       </Row>

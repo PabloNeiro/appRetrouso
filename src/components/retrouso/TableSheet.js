@@ -7,6 +7,7 @@ function TableSheet({ list }) {
     <Table striped>
       <thead>
         <tr className='text-center'>
+          <th></th>
           <th>Nome</th>
           <th>Partituras</th>
         </tr>
@@ -15,6 +16,7 @@ function TableSheet({ list }) {
         {list &&
           list.map((value, i) => (
             <tr key={i} className='text-center'>
+              <td>{i + 1}</td>
               <td>
                 <b>{value.name}</b>
               </td>

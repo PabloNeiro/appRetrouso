@@ -31,7 +31,7 @@ function Retrouso() {
       <Row className='mt-2'>
         <Col xs='6'>
           <Link className='btn btn-dark' to={`/`}>
-            VOLVER
+            INICIO
           </Link>
         </Col>
         <Col xs='6'>

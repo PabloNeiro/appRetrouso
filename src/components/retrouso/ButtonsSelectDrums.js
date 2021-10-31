@@ -6,12 +6,12 @@ function ButtonsSelectDrums({ setDrums }) {
   return (
     <Col xs='12'>
       <Button onClick={() => setDrums(false)} color='primary'>
-        Gaita
+        GAITA
       </Button>
       <Button onClick={() => setDrums(true)} className='mx-3' color='warning'>
-        Percusión
+        PERCUSIÓN
       </Button>
-      <Link className='btn btn-success' to='/retrouso'>
+      <Link className='btn btn-outline-danger' to='/retrouso'>
         VOLVER
       </Link>
     </Col>
