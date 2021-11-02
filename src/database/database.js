@@ -1,7 +1,17 @@
 import mallou from './mallou.svg';
 import chao from './chao.svg';
 
-export const info = [
+export const options = [
+  { name: 'Mostrar todo', identificate: 'todas' },
+  { name: 'Pasodobles', identificate: 'pasodoble' },
+  { name: 'Muiñeiras', identificate: 'muiñeira' },
+  { name: 'Xotas', identificate: 'xota' },
+  { name: 'Rumbas', identificate: 'rumba' },
+  { name: 'Foliadas', identificate: 'foliada' },
+  { name: 'Vals', identificate: 'vals' },
+];
+
+export const songsList = [
   {
     id: 1,
     name: 'P. Mallou',

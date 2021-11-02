@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, CardMedia } from '@material-ui/core';
+import { Card, CardMedia } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './home.css';
 

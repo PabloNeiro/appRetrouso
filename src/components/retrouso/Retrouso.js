@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'reactstrap';
-import { info } from '../../database/database';
+import { songsList } from '../../database/database';
 import SelectSheet from './SelectSheet';
 import TableSheet from './TableSheet';
 import './retrouso.css';
@@ -9,19 +9,20 @@ import './retrouso.css';
 function Retrouso() {
   const [list, setList] = useState();
 
-  const getList = () => setList(info);
+  const getList = () => setList(songsList);
   useEffect(() => {
     getList();
   }, []);
 
   const filterSong = (event) => {
-    const filterList = info.filter(function (value) {
+    const filterList = songsList.filter(function (value) {
       if (event.target.value === 'todas') {
-        return info;
+        return songsList;
       }
       if (event.target.value !== 'todas') {
         return value.type === event.target.value;
       }
+      return songsList;
     });
 
     setList(filterList);

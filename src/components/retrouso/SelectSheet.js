@@ -1,16 +1,7 @@
 import React from 'react';
+import { options } from '../../database/database';
 
 function SelectSheet({ filterSong }) {
-  const options = [
-    { name: 'Mostrar todo', identificate: 'todas' },
-    { name: 'Pasodobles', identificate: 'pasodoble' },
-    { name: 'Muiñeiras', identificate: 'muiñeira' },
-    { name: 'Xotas', identificate: 'xota' },
-    { name: 'Rumbas', identificate: 'rumba' },
-    { name: 'Foliadas', identificate: 'foliada' },
-    { name: 'Vals', identificate: 'vals' },
-  ];
-
   return (
     <h4>
       <select name='select' onChange={filterSong}>
