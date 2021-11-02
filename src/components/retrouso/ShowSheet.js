@@ -1,10 +1,15 @@
 import React from 'react';
+import NoSheet from './NoSheet';
 
 function ShowSheet({ id, drums, src, srcdrum }) {
   return (
     <>
-      {drums ? (
+      {drums && srcdrum === null ? (
+        <NoSheet instrument={'percusión'} />
+      ) : drums && srcdrum !== null ? (
         <img src={srcdrum} alt='invernia' height='100%' width='100%'></img>
+      ) : !drums && src === null ? (
+        <NoSheet instrument={'gaita'} />
       ) : (
         <img src={src} alt={id} height='100%' width='100%'></img>
       )}

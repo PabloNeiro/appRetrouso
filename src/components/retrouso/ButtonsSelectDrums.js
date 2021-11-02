@@ -11,7 +11,7 @@ function ButtonsSelectDrums({ setDrums }) {
       <Button onClick={() => setDrums(true)} className='mx-3' color='warning'>
         PERCUSIÓN
       </Button>
-      <Link className='btn btn-outline-danger' to='/retrouso'>
+      <Link className='btn btn-danger' to='/retrouso'>
         VOLVER
       </Link>
     </Col>

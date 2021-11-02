@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Col, Row } from 'reactstrap';
+import { Col, Container, Row } from 'reactstrap';
 import { info } from '../../database/database';
 import SelectSheet from './SelectSheet';
 import TableSheet from './TableSheet';
+import './retrouso.css';
 
 function Retrouso() {
   const [list, setList] = useState();
@@ -27,8 +28,8 @@ function Retrouso() {
   };
 
   return (
-    <>
-      <Row className='mt-2'>
+    <Container className='bgListSong'>
+      <Row>
         <Col xs='6'>
           <Link className='btn btn-dark' to={`/`}>
             INICIO
@@ -44,7 +45,7 @@ function Retrouso() {
           <TableSheet list={list} />
         </Col>
       </Row>
-    </>
+    </Container>
   );
 }
 
