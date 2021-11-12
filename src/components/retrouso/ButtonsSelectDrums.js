@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import { Button, Col } from 'reactstrap';
 
 function ButtonsSelectDrums({ setDrums }) {
-  const goBack = () => {
-    window.history.back();
-  };
-
   return (
     <Col xs='12'>
       <Button onClick={() => setDrums(false)} color='primary'>
@@ -15,9 +11,9 @@ function ButtonsSelectDrums({ setDrums }) {
       <Button onClick={() => setDrums(true)} className='mx-3' color='warning'>
         PERCUSIÓN
       </Button>
-      <Button className='btn btn-danger' onClick={() => goBack()}>
+      <Link className='btn btn-danger' to={`/retrouso`}>
         VOLVER
-      </Button>
+      </Link>
     </Col>
   );
 }

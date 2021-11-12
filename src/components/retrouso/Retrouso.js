@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'reactstrap';
 import { songsList } from '../../database/database';
@@ -7,12 +7,7 @@ import TableSheet from './TableSheet';
 import './retrouso.css';
 
 function Retrouso() {
-  const [list, setList] = useState();
-
-  const getList = () => setList(songsList);
-  useEffect(() => {
-    getList();
-  }, []);
+  const [list, setList] = useState(songsList);
 
   const filterSong = (event) => {
     const filterList = songsList.filter(function (value) {
@@ -24,7 +19,6 @@ function Retrouso() {
       }
       return songsList;
     });
-
     setList(filterList);
   };
 
@@ -32,7 +26,7 @@ function Retrouso() {
     <Container className='bgListSong'>
       <Row>
         <Col xs='6'>
-          <Link className='btn btn-dark' to={`/`}>
+          <Link className='btn btn-dark' to={`/home`}>
             INICIO
           </Link>
         </Col>

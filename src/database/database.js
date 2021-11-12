@@ -2,7 +2,7 @@ import mallou from './mallou.svg';
 import chao from './chao.svg';
 
 export const options = [
-  { name: 'Mostrar todo', identificate: 'todas' },
+  { name: 'Ver todas', identificate: 'todas' },
   { name: 'Pasodobles', identificate: 'pasodoble' },
   { name: 'Muiñeiras', identificate: 'muiñeira' },
   { name: 'Xotas', identificate: 'xota' },

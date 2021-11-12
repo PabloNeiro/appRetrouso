@@ -7,7 +7,7 @@ function ShowSheet({ id, drums, src, srcdrum }) {
       {drums && srcdrum === null ? (
         <NoSheet instrument={'percusión'} />
       ) : drums && srcdrum !== null ? (
-        <img src={srcdrum} alt='invernia' height='100%' width='100%'></img>
+        <img src={srcdrum} alt={id} height='100%' width='100%'></img>
       ) : !drums && src === null ? (
         <NoSheet instrument={'gaita'} />
       ) : (
